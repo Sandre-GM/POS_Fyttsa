@@ -1,13 +1,16 @@
-import { Button } from "./components/ui/button";
+import LeftPanel from "./components/Pages/LeftPanel";
+import RightPanel from "./components/Pages/RightPanel";
+import Header from "./components/ui/Header";
 
 function App() {
   return (
-    <div className="flex flex-col gap-2 justify-center items-center min-h-screen">
-      <h1>Hello fyttsa</h1>
-      <Button variant="outline" size="lg">
-        Let's do it
-      </Button>
-    </div>
+    <>
+      <Header />
+      <div className="h-screen w-full grid grid-cols-1 lg:grid-cols-[55%_45%] bg-muted">
+        <LeftPanel />
+        <RightPanel />
+      </div>
+    </>
   );
 }
 
